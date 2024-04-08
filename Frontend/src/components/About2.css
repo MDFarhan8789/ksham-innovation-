@@ -1,0 +1,60 @@
+/* About2.css */
+.About2 {
+  position: relative;
+  margin-top: 0px;
+  padding: 25px;
+  margin: 40px;
+  text-align: center; /* Center align text */
+}
+
+.our-vision {
+  font-weight: 700;
+  font-size: 3.5rem;
+  font-family: serif;
+  line-height: 1.2; /* Adjusted line height */
+  margin-bottom: 20px; /* Added margin bottom */
+}
+
+.about-2-content {
+  font-weight: 400;
+  font-size: 20px; /* Decreased font size */
+  line-height: 1.5; /* Adjusted line height */
+}
+
+.about-2-content span {
+  font-weight: 700;
+}
+
+.about-2-background {
+  position: absolute;
+  height: 40vw; /* Adjusted height */
+  width: 40vw; /* Added width */
+  border-radius: 50%;
+  background: #eccd783e;
+  top: -10vw; /* Adjusted top position */
+  left: 50%; /* Centered horizontally */
+  transform: translateX(-50%, +50%); /* Centered horizontally */
+
+  z-index: 5; /* Placed behind text */
+  transition: transform 0.3s ease-in-out; /* Added transition */
+}
+
+.about-2-background:hover {
+  transform: scale(1.5); /* Added hover effect */
+}
+
+@media (max-width: 600px) {
+  .our-vision {
+    font-size: 2.5rem; /* Adjusted font size for smaller screens */
+  }
+
+  .about-2-content {
+    font-size: 1rem; /* Decreased font size for smaller screens */
+  }
+
+  .about-2-background {
+    height: 60vw; /* Adjusted height for smaller screens */
+    width: 60vw; /* Adjusted width for smaller screens */
+    top: -18vw; /* Adjusted top position for smaller screens */
+  }
+}

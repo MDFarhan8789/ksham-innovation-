@@ -1,0 +1,90 @@
+/* About1.css */
+.About1 {
+  position: relative;
+  text-align: center;
+  padding: 0 10px; /* Added padding */
+}
+
+.about-1-back {
+  z-index: -3;
+  top: 0px;
+  left: 0px;
+  position: absolute;
+  background: #135058;
+  height: 52vh;
+  width: 100vw;
+}
+
+.about-1-content {
+  padding-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 12px;
+}
+
+.what-we-do {
+  flex: 0.4;
+  font-weight: 700;
+  font-size: 3.5rem;
+  font-family: serif;
+  line-height: 1.2; /* Adjusted line height */
+}
+
+.about-1-card {
+  flex: 0.6;
+  margin: 28px;
+  padding: 22px;
+  border-radius: 14px;
+  background-color: #f1f2b5;
+  transition: transform 0.3s ease-in-out; /* Added transition */
+  z-index: 5.1;
+}
+
+.about-1-card:hover {
+  transform: scale(1.05); /* Added hover effect */
+}
+
+.about-card-text {
+  color: #000000;
+  padding: 28px;
+  font-weight: 500; /* Increased font weight */
+  font-size: 20px; /* Decreased font size */
+  line-height: 1.5; /* Adjusted line height */
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.mission-1-text {
+  padding: 28px;
+  font-weight: 600; /* Increased font weight */
+  font-size: 24px; /* Decreased font size */
+  line-height: 1.5; /* Adjusted line height */
+  margin-top: 0px;
+  margin-left: 28px;
+  margin-right: 28px;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 600px) {
+  .about-1-content {
+    flex-direction: column;
+  }
+
+  .what-we-do {
+    font-size: 2.5rem; /* Adjusted font size for smaller screens */
+  }
+
+  .about-1-card {
+    flex: 1; /* Set flex to full width */
+    margin: 20px; /* Adjusted margin */
+  }
+
+  .about-card-text {
+    font-size: 18px; /* Decreased font size for smaller screens */
+  }
+
+  .mission-1-text {
+    font-size: 20px; /* Decreased font size for smaller screens */
+  }
+}

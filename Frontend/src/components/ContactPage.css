@@ -1,0 +1,121 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact-us-page {
+  width: 100vw;
+}
+.contact-us-hero {
+  position: relative;
+  min-height: 50vh; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  padding: 50px 0;
+}
+
+.contact-us-back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(90deg, #135058, #f1f2b5);
+  z-index: -1;
+}
+.contact-us-heading {
+  color: #222;
+  font-size: 3.5rem;
+  font-family:serif;
+  line-height: 1.2;
+  font-weight: 700;
+  margin-bottom: 20px;
+  animation: fadeInUp 1s ease forwards;
+}
+.contact-us-section-info {
+  margin-top: -5%;
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-image: linear-gradient(90deg, #135058, #f1f2b5);
+  animation: fadeInUp 1s ease forwards;
+  margin-bottom: 2%;
+}
+.contact-us-1,
+.contact-us-2 {
+  font-weight: 700;
+  font-size: 1.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact-us-1 a,
+.contact-us-2 a {
+  text-decoration: none;
+  color: #222;
+  display: flex;
+  align-items: center;
+  transition: color 0.3s ease;
+}
+.contact-us-1 a img,
+.contact-us-2 a img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.contact-us-1 a:hover,
+.contact-us-2 a:hover {
+  color: #5a4300;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 600px) {
+  .contact-us-hero {
+    position: relative;
+    min-height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 20px 0;
+  }
+  .contact-us-heading {
+    font-size: 2rem;
+    text-align: center;
+    line-height: 1;
+    font-weight: 700;
+    margin-bottom: 10px;
+    animation: fadeInUp 1s ease forwards;
+  }
+  .contact-us-1,
+  .contact-us-2 {
+    font-weight: 700;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact-us-1 a img,
+  .contact-us-2 a img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+  }
+}
